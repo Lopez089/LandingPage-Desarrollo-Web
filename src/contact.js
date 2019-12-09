@@ -1,4 +1,17 @@
 import { StateContacto } from "./state/inicialState";
+import formDatos from "./form";
+
+const form = StateContacto.input.map(
+  i =>
+    `<div class="form-group">
+      ${
+        i.etiqueta === "textarea"
+          ? ` 
+          <textarea class="form-control rounded " placeholder="${i.name}" row='3'></textarea>`
+          : `<${i.etiqueta} type="${i.type}" class="form-control rounded" placeholder="${i.name}" name='${i.name}'> `
+      }
+    </div>`
+);
 
 const Contact = `
   <section id='contacto' class='bg-light h-75 mt-5'>
@@ -11,25 +24,16 @@ const Contact = `
       <div class='col-lg-6 col-sm-12 h-100 d-flex justify-content-center align-items-center'>
         <div>
           <p class='h3 pb-5'>${StateContacto.titulo}</p>
-          <form>
-            ${StateContacto.input.map(
-              i =>
-                `<div class="form-group">
-                  ${
-                    i.etiqueta === "textarea"
-                      ? `
-                      <textarea class="form-control" placeholder="${i.name}" row='3'></textarea>`
-                      : `<${i.etiqueta} type="${i.type}" class="form-control" placeholder="${i.name}"/> `
-                  }
-                </div>`
-            )}
-            <button type="submit" class="btn btn-primary">${
+          <form onsubmit=${event => formDatos(event)}>
+            ${form.join("")}
+            <button type="submit" class="rounded btn btn-primary">${
               StateContacto.submit
             }</button>
-            </form>
+          </form>
         </div>
       </div>
     </div>
   </section>
 `;
+
 export default Contact;

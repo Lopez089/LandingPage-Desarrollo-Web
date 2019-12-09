@@ -18707,27 +18707,27 @@ var StateHeader = {
   urlPrimario: "#servicios",
   botonSegundario: "Ver Precios",
   urlSegundario: "#precios",
-  img: "https://image.flaticon.com/icons/svg/634/634154.svg"
+  img: "https://image.flaticon.com/icons/svg/1508/1508854.svg"
 };
 exports.StateHeader = StateHeader;
 var SteteServicios = {
   titulo: "Nuestros Servicios",
   servicios: [{
-    titulo: "Dj",
-    descripcion: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impreso",
-    img: "https://image.flaticon.com/icons/svg/1711/1711963.svg"
+    titulo: "Resposive Desing",
+    descripcion: "Adaptamos el diseño a todas las pantallas que use tus usuarios para que disfrute de la mejor experiencia en tu sitio web",
+    img: "https://image.flaticon.com/icons/svg/1488/1488592.svg"
   }, {
-    titulo: "Fotografia",
-    descripcion: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impreso",
-    img: "https://image.flaticon.com/icons/svg/1809/1809931.svg"
+    titulo: "Diseño personalizado",
+    descripcion: "Diseño personalizado para tu sitio web para que tus usuarios tenga la mejor experiencias",
+    img: "https://image.flaticon.com/icons/svg/1688/1688441.svg"
   }, {
-    titulo: "Fotocol",
-    descripcion: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impreso",
-    img: "https://image.flaticon.com/icons/svg/1006/1006643.svg"
+    titulo: "Analitica Web",
+    descripcion: "Intalacion de analitica en tu sitio web para conocer en todo momento el comportamiento de tus usuarios y poder mejorar tus combersiones ",
+    img: "https://image.flaticon.com/icons/svg/1925/1925173.svg"
   }, {
-    titulo: "Animacion",
-    descripcion: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impreso",
-    img: "https://image.flaticon.com/icons/svg/531/531213.svg"
+    titulo: "Pruevas con usuarios reales",
+    descripcion: "Probamos el sitio web con tus usuarios antes de sacarlo al mercado para mejoras la web antes de salir al mercado",
+    img: "https://image.flaticon.com/icons/svg/1508/1508867.svg"
   }]
 };
 exports.SteteServicios = SteteServicios;
@@ -18735,45 +18735,63 @@ var StatePrecios = {
   titulo: "Nuestros Precios",
   precios: [{
     titulo: "BASICO",
-    precio: 50,
+    precio: 250,
     servicios: [{
-      nombre: "Dj",
+      nombre: "Sitio Web",
       contratado: true
     }, {
-      nombre: "Fotografia",
+      nombre: "Diseño Personalizado",
+      contratado: true
+    }, {
+      nombre: "Resposive Desing",
       contratado: false
     }, {
-      nombre: "Animacion",
+      nombre: "Analitica Web",
+      contratado: false
+    }, {
+      nombre: "Pruebas con usuarios",
       contratado: false
     }]
   }, {
     titulo: "PREMIUM",
-    precio: 90,
+    precio: 999,
     servicios: [{
-      nombre: "Dj",
+      nombre: "Sitio Web",
       contratado: true
     }, {
-      nombre: "Fotografia",
+      nombre: "Diseño Personalizado",
       contratado: true
     }, {
-      nombre: "Animacion",
+      nombre: "Resposive Desing",
       contratado: true
     }, {
-      nombre: "Fotocol",
+      nombre: "Analitica Web",
+      contratado: true
+    }, {
+      nombre: "Pruebas con usuarios",
+      contratado: true
+    }, {
+      nombre: "Hosting y Dominio",
       contratado: true
     }]
   }, {
     titulo: "ESTANDAR",
-    precio: 70,
+    precio: 500,
     servicios: [{
-      nombre: "Dj",
+      nombre: "Sitio Web",
       contratado: true
     }, {
-      nombre: "Fotografia",
+      nombre: "Diseño Personalizado",
       contratado: true
     }, {
-      nombre: "Animacion",
+      nombre: "Resposive Desing",
       contratado: true
+    }, {
+      nombre: "Analitica Web",
+      contratado: true
+    }, {
+      nombre: "Pruebas con usuarios",
+      contratado: false
     }]
   }]
 };
@@ -18797,7 +18815,7 @@ var StateTestimonios = {
 exports.StateTestimonios = StateTestimonios;
 var StateContacto = {
   titulo: "Contacta con nosotros",
-  img: "https://image.flaticon.com/icons/svg/1497/1497772.svg",
+  img: "https://image.flaticon.com/icons/svg/839/839618.svg",
   input: [{
     etiqueta: "input",
     type: "text",
@@ -18829,9 +18847,6 @@ var StateFooter = {
     icono: "fab fa-twitter",
     url: ""
   }, {
-    icono: "fab fa-spotify",
-    url: ""
-  }, {
     icono: "fab fa-linkedin-in",
     url: ""
   }]
@@ -18847,9 +18862,11 @@ exports.default = void 0;
 
 var _inicialState = require("./state/inicialState");
 
-var Nav = "\n  <nav id='home' class=\" container navbar navbar-expand-lg navbar-light bg-transparent\">\n      <a class=\"navbar-brand \" href=\"#\"><i class=\"h1 ".concat(_inicialState.StateNav.logo, " text-primary\"></i></a>\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <div class=\"collapse navbar-collapse d-flex-lg justify-content-end\" id=\"navbarNav\">\n        <ul class=\"navbar-nav\">\n          ").concat(_inicialState.StateNav.nav.map(function (item) {
-  return "<li class=\"nav-item mr-5\">\n             <a data-scroll class=\"nav-link\" href='#".concat(item, "'>").concat(item.toUpperCase(), "</a>\n            </li>");
-}), "\n        </ul>\n      </div>\n  </nav>\n");
+var item = _inicialState.StateNav.nav.map(function (item) {
+  return "<li class=\"nav-item mr-5\">\n                  <a data-scroll class=\"nav-link\" href='#".concat(item, "'>").concat(item.toUpperCase(), "</a>\n                </li>");
+});
+
+var Nav = "\n  <nav id='home' class=\" container navbar navbar-expand-lg navbar-light bg-transparent\">\n      <a class=\"navbar-brand \" href=\"#\"><i class=\"h1 ".concat(_inicialState.StateNav.logo, " text-primary\"></i></a>\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <div class=\"collapse navbar-collapse d-flex-lg justify-content-end\" id=\"navbarNav\">\n        <ul class=\"navbar-nav\">\n          ").concat(item.join(""), "\n        </ul>\n      </div>\n  </nav>\n");
 var _default = Nav;
 exports.default = _default;
 },{"./state/inicialState":"src/state/inicialState.js"}],"src/header.js":[function(require,module,exports) {
@@ -18866,7 +18883,7 @@ var _inicialState = require("./state/inicialState");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Header = "\n  <header>\n    ".concat(_nav.default, "\n    <section class='container h-75'>\n      <div class='row  h-100'>\n        <div class=' col-xs-12 col-lg-6 h-100 d-flex flex-column justify-content-center'>\n          <div class=''>\n            <h1 class='text-center text-lg-left'>").concat(_inicialState.StateHeader.titulo, "</h1>\n            <p class='text-center text-lg-left font-weight-lighter'>").concat(_inicialState.StateHeader.descripcion, "</p>\n            <div class='d-flex justify-content-lg-start justify-content-center'>\n              <button type=\"button\" class=\"mr-3 mt-3 shadow btn btn-primary\">").concat(_inicialState.StateHeader.botonPrimario, "</button>\n              <button type=\"button\" class=\"mt-3 shadow btn btn-outline-secondary\">").concat(_inicialState.StateHeader.botonSegundario, "</button>\n            </div>\n          </div>\n        </div>\n        <div class='col-xs-12 col-lg-6 d-flex justify-content-center align-items-center'>\n          <img class='w-75 d-sm-none d-md-none d-none d-lg-block' src='").concat(_inicialState.StateHeader.img, "'/>\n        </div>\n      </div>\n    </section>\n    <section class='d-flex justify-content-center align-items-center'>\n      <i class=\" d-none d-sm-none d-md-block fas fa-angle-down display-4 text-muted animated bounce infinite delay-4s\"></i>\n    </section>\n  </header>\n");
+var Header = "\n  <header>\n    ".concat(_nav.default, "\n    <section class='container h-75'>\n      <div class='row  h-100'>\n        <div class=' col-xs-12 col-lg-6 h-100 d-flex flex-column justify-content-center'>\n          <div class=''>\n            <h1 class='h2 text-center text-lg-left'>").concat(_inicialState.StateHeader.titulo, "</h1>\n            <p class='text-center text-lg-left font-weight-lighter'>").concat(_inicialState.StateHeader.descripcion, "</p>\n            <div class='d-flex justify-content-lg-start justify-content-center'>\n              <button type=\"button\" class=\"rounded mr-3 mt-3 shadow btn btn-primary\">").concat(_inicialState.StateHeader.botonPrimario, "</button>\n              <button type=\"button\" class=\"rounded mt-3 shadow btn btn-outline-secondary\">").concat(_inicialState.StateHeader.botonSegundario, "</button>\n            </div>\n          </div>\n        </div>\n        <div class='col-xs-12 col-lg-6 d-flex justify-content-center align-items-center'>\n          <img class='w-75 d-sm-none d-md-none d-none d-lg-block' src='").concat(_inicialState.StateHeader.img, "'/>\n        </div>\n      </div>\n    </section>\n    <section class='d-flex justify-content-center align-items-center'>\n      <i class=\" d-none d-sm-none d-md-block fas fa-angle-down display-4 text-muted animated bounce infinite delay-4s\"></i>\n    </section>\n  </header>\n");
 var _default = Header;
 exports.default = _default;
 },{"./nav":"src/nav.js","./state/inicialState":"src/state/inicialState.js"}],"src/Servicios.js":[function(require,module,exports) {
@@ -18879,12 +18896,30 @@ exports.default = void 0;
 
 var _inicialState = require("./state/inicialState");
 
-var Servicios = "\n  <section id='servicios' class='container pt-3 pb-5  '>\n    <h2 class='text-center mt-5 mb-5'>".concat(_inicialState.SteteServicios.titulo, "</h2>\n    ").concat(_inicialState.SteteServicios.servicios.map(function (s, i) {
-  return "<article class='d-flex flex-wrap h-100 mt-5 mb-5 ".concat(i % 2 !== 0 ? "flex-row-reverse" : null, "'>\n        <div class='wow ").concat(i % 2 !== 0 ? "fadeInRight" : "fadeInLeft", " delay-1s col-lg-6 col-sm-12 d-flex justify-content-center'>\n          <img class='w-50' src='").concat(s.img, "'/>\n        </div>\n        <div class='wow ").concat(i % 2 !== 0 ? "fadeInLeft " : "fadeInRight", " delay-1s col-lg-6 col-sm-12 d-flex align-items-center'>\n          <div>\n            <h4 class='text-center text-lg-left'>").concat(s.titulo, "</h4>\n            <p class='font-weight-lighter text-center text-lg-left'>").concat(s.descripcion, "</p>\n          </div>\n        </div>\n      </article>");
-}), "\n    \n  </section>\n");
+var servicio = _inicialState.SteteServicios.servicios.map(function (s, i) {
+  return "<article class='d-flex flex-wrap mt-5 mb-5 ".concat(i % 2 !== 0 ? "flex-row-reverse" : null, "'>\n                    <div class='wow ").concat(i % 2 !== 0 ? "fadeInRight" : "fadeInLeft", "  col-lg-6 col-12 d-flex justify-content-center'>\n                      <img class='h-100 w-100 p-5' src='").concat(s.img, "'/>\n                    </div>\n                    <div class='wow ").concat(i % 2 !== 0 ? "fadeInLeft " : "fadeInRight", " col-lg-6 col-12 d-flex align-items-center'>\n                      <div>\n                        <h4 class='text-center text-lg-left'>").concat(s.titulo, "</h4>\n                        <p class='font-weight-lighter text-center text-lg-left'>").concat(s.descripcion, "</p>\n                      </div>\n                    </div>\n                  </article>");
+});
+
+var Servicios = "\n  <section id='servicios' class='container pt-3 pb-5  '>\n    <h2 class='text-center mt-5 mb-5'>".concat(_inicialState.SteteServicios.titulo, "</h2>\n    ").concat(servicio.join(""), "\n    \n  </section>\n");
 var _default = Servicios;
 exports.default = _default;
-},{"./state/inicialState":"src/state/inicialState.js"}],"src/Precios.js":[function(require,module,exports) {
+},{"./state/inicialState":"src/state/inicialState.js"}],"src/preciosServicios.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var preciosServicios = function preciosServicios(p) {
+  return p.servicios.map(function (s) {
+    return "\n      <div class='d-flex justify-content-between align-items-center border-bottom pb-2 pt-2'>\n        <p class='mb-0 font-weight-lighter'>".concat(s.nombre, "</p>\n        <i class=\"").concat(s.contratado === true ? "fas fa-check text-info" : "fas fa-times text-danger", "\"></i>\n      </div>\n      ");
+  });
+};
+
+var _default = preciosServicios;
+exports.default = _default;
+},{}],"src/Precios.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18894,14 +18929,18 @@ exports.default = void 0;
 
 var _inicialState = require("./state/inicialState");
 
-var TablaPrecios = "\n<section id='precios' class='w-100 pt-3 pb-3 bg-light'> \n  <div class='containter h-100 mt-5 mb-5'>\n    <h2 class='text-center mb-4'>".concat(_inicialState.StatePrecios.titulo, "</h2>\n    <div class='row d-flex justify-content-center h-100 align-items-center'>\n    ").concat(_inicialState.StatePrecios.precios.map(function (p) {
-  return "<article class='".concat(p.titulo === "PREMIUM" ? "wow pulse delay-3s" : null, "rounded shadow card m-4 pt-5 pb-5 col-md-8 col-lg-2 col-sm-12'>\n          <h6 class='text-center'>").concat(p.titulo, "</h6>\n          <div class='d-flex justify-content-center mt-4'>\n            <p class='display-4'>\n              <strong>\n                ").concat(p.precio, "\n              </strong>\n              </p>\n            <div class='d-flex flex-column'>\n              <p>\u20AC</p>\n              <p class='text-muted'>/h</p>\n            </div> \n          </div>\n          <div class='container mt-3'>\n            ").concat(p.servicios.map(function (s) {
-    return "\n              <div class='d-flex justify-content-between align-items-center border-bottom pb-2 pt-2'>\n                <p class='mb-0 font-weight-lighter'>".concat(s.nombre, "</p>\n                <i class=\"").concat(s.contratado === true ? "fas fa-check text-info" : "fas fa-times text-danger", "\"></i>\n              </div>\n              ");
-  }), "\n          </div>\n          <a href=\"#\" class=\"stretched-link mt-4 text-center\">Mas informacion</a>\n        <button type=\"button\" class=\"shadow btn btn-primary mt-4\">Contratar<i class=\"fas fa-angle-right ml-2\"></i></button>\n\n        </article>");
-}), "\n     </div> \n  </div>\n</section> \n");
+var _preciosServicios = _interopRequireDefault(require("./preciosServicios"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var tabla = _inicialState.StatePrecios.precios.map(function (p) {
+  return "<article class='".concat(p.titulo === "PREMIUM" ? "wow pulse delay-3s" : null, " rounded shadow card m-4 pt-5 pb-5 col-md-6 col-lg-2 col-9'>\n                  <h6 class='text-center'>").concat(p.titulo, "</h6>\n                  <div class='d-flex justify-content-center mt-4'>\n                    <p class='display-4'>\n                      <strong>\n                        ").concat(p.precio, "\n                      </strong>\n                      </p>\n                    <div class='d-flex flex-column'>\n                      <p>\u20AC</p>\n                    </div> \n                  </div>\n                  <div class='container mt-3'>\n                    ").concat((0, _preciosServicios.default)(p).join(""), "\n                  </div>\n                  <a href=\"#\" class=\"stretched-link mt-4 text-center\">Mas informacion</a>\n                <button type=\"button\" class=\"rounded shadow btn btn-primary mt-4\">Contratar<i class=\"fas fa-angle-right ml-2\"></i></button>\n\n                </article>");
+});
+
+var TablaPrecios = "\n<section id='precios' class='w-100 pt-3 pb-3 bg-light'> \n  <div class='containter h-100 mt-5 mb-5'>\n    <h2 class='text-center mb-4'>".concat(_inicialState.StatePrecios.titulo, "</h2>\n    <div class='row d-flex justify-content-center h-100 align-items-center'>\n    ").concat(tabla.join(""), "\n     </div> \n  </div>\n</section> \n");
 var _default = TablaPrecios;
 exports.default = _default;
-},{"./state/inicialState":"src/state/inicialState.js"}],"src/testimonios.js":[function(require,module,exports) {
+},{"./state/inicialState":"src/state/inicialState.js","./preciosServicios":"src/preciosServicios.js"}],"src/testimonios.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18911,12 +18950,29 @@ exports.default = void 0;
 
 var _inicialState = require("./state/inicialState");
 
-var Testimonios = "\n  <section id='testimonio' class='pb-5'>\n   <h2 class='text-center m-5'>".concat(_inicialState.StateTestimonios.titulo, "</h2>\n   <div class='container d-flex justify-content-around flex-wrap'>\n   ").concat(_inicialState.StateTestimonios.testimonio.map(function (t) {
-  return "\n      <article class='wow zoomInDown delay-1s card col-12 col-lg-3 col-md-12  shadow-lg pb-4 mt-5'>\n        <div class='container d-flex flex-column align-items-center'>\n          <i class=\"fas fa-quote-right display-4 p-4 text-primary\"></i>\n          <p class=' text-center font-weight-lighter  '>\n            ".concat(t.testimonio, "\n          </p>\n          <div class='border-top col-6 m-3'></div>\n          <img class='rounded-circle w-50' src='").concat(t.img, "'/> \n          <p class='h6 text-muted small mt-2'>").concat(t.nombre, "</p>\n        </div>\n      </article>\n    ");
-}), "</div>\n  </section>\n");
+var testimonio = _inicialState.StateTestimonios.testimonio.map(function (t) {
+  return "\n   <article class='rounded wow zoomInDown card col-10 col-lg-3 col-md-8  shadow-lg pb-4 mt-5'>\n     <div class='container d-flex flex-column align-items-center'>\n       <i class=\"fas fa-quote-right display-4 p-4 text-primary\"></i>\n       <p class=' text-center font-weight-lighter  '>\n         ".concat(t.testimonio, "\n       </p>\n       <div class='border-top col-6 m-3'></div>\n       <img class='rounded-circle w-50' src='").concat(t.img, "'/> \n       <p class='h6 text-muted small mt-2'>").concat(t.nombre, "</p>\n     </div>\n   </article>\n ");
+});
+
+var Testimonios = "\n  <section id='testimonio' class='pb-5'>\n   <h2 class='text-center m-5'>".concat(_inicialState.StateTestimonios.titulo, "</h2>\n   <div class='container d-flex justify-content-around flex-wrap'>\n   ").concat(testimonio.join(""), "</div>\n  </section>\n");
 var _default = Testimonios;
 exports.default = _default;
-},{"./state/inicialState":"src/state/inicialState.js"}],"src/contact.js":[function(require,module,exports) {
+},{"./state/inicialState":"src/state/inicialState.js"}],"src/form.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var formDatos = function formDatos(e) {
+  return e.preventDefault();
+};
+
+console.log("jdalfj");
+var _default = formDatos;
+exports.default = _default;
+},{}],"src/contact.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18926,12 +18982,20 @@ exports.default = void 0;
 
 var _inicialState = require("./state/inicialState");
 
-var Contact = "\n  <section id='contacto' class='bg-light h-75 mt-5'>\n    <div class='h-100 container d-flex flex-wrap'>\n      <div class='col-lg-6 col-sm-12 w-100 d-flex justify-content-center align-items-center'>\n        <img class='w-75 d-sm-none d-md-none d-none d-lg-block' src='".concat(_inicialState.StateContacto.img, "' alt=''/>\n      </div>\n      <div class='col-lg-6 col-sm-12 h-100 d-flex justify-content-center align-items-center'>\n        <div>\n          <p class='h3 pb-5'>").concat(_inicialState.StateContacto.titulo, "</p>\n          <form>\n            ").concat(_inicialState.StateContacto.input.map(function (i) {
-  return "<div class=\"form-group\">\n                  ".concat(i.etiqueta === "textarea" ? "\n                      <textarea class=\"form-control\" placeholder=\"".concat(i.name, "\" row='3'></textarea>") : "<".concat(i.etiqueta, " type=\"").concat(i.type, "\" class=\"form-control\" placeholder=\"").concat(i.name, "\"/> "), "\n                </div>");
-}), "\n            <button type=\"submit\" class=\"btn btn-primary\">").concat(_inicialState.StateContacto.submit, "</button>\n            </form>\n        </div>\n      </div>\n    </div>\n  </section>\n");
+var _form = _interopRequireDefault(require("./form"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var form = _inicialState.StateContacto.input.map(function (i) {
+  return "<div class=\"form-group\">\n      ".concat(i.etiqueta === "textarea" ? " \n          <textarea class=\"form-control rounded \" placeholder=\"".concat(i.name, "\" row='3'></textarea>") : "<".concat(i.etiqueta, " type=\"").concat(i.type, "\" class=\"form-control rounded\" placeholder=\"").concat(i.name, "\" name='").concat(i.name, "'> "), "\n    </div>");
+});
+
+var Contact = "\n  <section id='contacto' class='bg-light h-75 mt-5'>\n    <div class='h-100 container d-flex flex-wrap'>\n      <div class='col-lg-6 col-sm-12 w-100 d-flex justify-content-center align-items-center'>\n        <img class='w-75 d-sm-none d-md-none d-none d-lg-block' src='".concat(_inicialState.StateContacto.img, "' alt=''/>\n      </div>\n      <div class='col-lg-6 col-sm-12 h-100 d-flex justify-content-center align-items-center'>\n        <div>\n          <p class='h3 pb-5'>").concat(_inicialState.StateContacto.titulo, "</p>\n          <form onsubmit=").concat(function (event) {
+  return (0, _form.default)(event);
+}, ">\n            ").concat(form.join(""), "\n            <button type=\"submit\" class=\"rounded btn btn-primary\">").concat(_inicialState.StateContacto.submit, "</button>\n          </form>\n        </div>\n      </div>\n    </div>\n  </section>\n");
 var _default = Contact;
 exports.default = _default;
-},{"./state/inicialState":"src/state/inicialState.js"}],"src/footer.js":[function(require,module,exports) {
+},{"./state/inicialState":"src/state/inicialState.js","./form":"src/form.js"}],"src/footer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18941,9 +19005,11 @@ exports.default = void 0;
 
 var _inicialState = require("./state/inicialState");
 
-var Footer = "\n  <footer class='bg-primary text-white '>\n    <div class='container'>\n      <div class='row h-100 d-flex flex-wrap flex-md-column-reverse flex-column-reverse flex-lg-row'>\n        <div class='d-flex justify-content-md-center justify-content-sm-center col-lg-6 col-sm-12 col-md-12'>\n          <p class=' mt-4 mb-4 text-lg-left text-center'>".concat(_inicialState.StateFooter.text, "</p>\n        </div>\n        <div class=' pb-0 mt-4 mb-4 col-lg-6 col-sm-12 col-md-12 d-flex justify-content-center justify-content-md-center justify-content-lg-end'>\n          <ul class='nav'>\n            ").concat(_inicialState.StateFooter.redesSociales.map(function (r) {
-  return "\n              <li class=\"nav-item\">\n                <a class=\"nav-link\" href=\"".concat(r.url, "\">\n                  <i class=\"text-white ").concat(r.icono, "\"></i>\n                </a>\n              </li>\n              ");
-}), "\n          </ul>\n        </div>\n      </div>\n    </div>\n  </footer>\n");
+var social = _inicialState.StateFooter.redesSociales.map(function (r) {
+  return "\n  <li class=\"nav-item\">\n    <a class=\"nav-link\" href=\"".concat(r.url, "\">\n      <i class=\"text-white ").concat(r.icono, "\"></i>\n    </a>\n  </li>\n  ");
+});
+
+var Footer = "\n  <footer class='bg-primary text-white '>\n    <div class='container'>\n      <div class='row h-100 d-flex flex-wrap flex-md-column-reverse flex-column-reverse flex-lg-row'>\n        <div class='d-flex justify-content-md-center justify-content-sm-center col-lg-6 col-sm-12 col-md-12'>\n          <p class=' mt-4 mb-4 text-center text-lg-left'>".concat(_inicialState.StateFooter.text, "</p>\n        </div>\n        <div class=' pb-0 mt-4 mb-4 col-lg-6 col-sm-12 col-md-12 d-flex justify-content-center justify-content-md-center justify-content-lg-end'>\n          <ul class='nav'>\n            ").concat(social.join(""), "\n          </ul>\n        </div>\n      </div>\n    </div>\n  </footer>\n");
 var _default = Footer;
 exports.default = _default;
 },{"./state/inicialState":"src/state/inicialState.js"}],"src/index.js":[function(require,module,exports) {
@@ -19007,7 +19073,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49841" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53339" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

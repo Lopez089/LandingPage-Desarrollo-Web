@@ -9,7 +9,6 @@ import TablaPrecios from "./Precios";
 import Testimonios from "./testimonios";
 import Contact from "./contact";
 import Footer from "./footer";
-
 //wow
 new WOW().init();
 

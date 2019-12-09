@@ -5,11 +5,14 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "gulp": "gulp"
   },
   "dependencies": {
     "animate.css": "3.7.2",
     "bootstrap": "4.4.1",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
     "jquery": "3.4.1",
     "popper.js": "1.16.0",
     "smooth-scroll": "16.1.0",

@@ -11,35 +11,35 @@ export const StateHeader = {
   urlPrimario: "#servicios",
   botonSegundario: "Ver Precios",
   urlSegundario: "#precios",
-  img: "https://image.flaticon.com/icons/svg/634/634154.svg"
+  img: "https://image.flaticon.com/icons/svg/1508/1508854.svg"
 };
 
 export const SteteServicios = {
   titulo: "Nuestros Servicios",
   servicios: [
     {
-      titulo: "Dj",
+      titulo: "Resposive Desing",
       descripcion:
-        "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impreso",
-      img: "https://image.flaticon.com/icons/svg/1711/1711963.svg"
+        "Adaptamos el diseño a todas las pantallas que use tus usuarios para que disfrute de la mejor experiencia en tu sitio web",
+      img: "https://image.flaticon.com/icons/svg/1488/1488592.svg"
     },
     {
-      titulo: "Fotografia",
+      titulo: "Diseño personalizado",
       descripcion:
-        "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impreso",
-      img: "https://image.flaticon.com/icons/svg/1809/1809931.svg"
+        "Diseño personalizado para tu sitio web para que tus usuarios tenga la mejor experiencias",
+      img: "https://image.flaticon.com/icons/svg/1688/1688441.svg"
     },
     {
-      titulo: "Fotocol",
+      titulo: "Analitica Web",
       descripcion:
-        "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impreso",
-      img: "https://image.flaticon.com/icons/svg/1006/1006643.svg"
+        "Intalacion de analitica en tu sitio web para conocer en todo momento el comportamiento de tus usuarios y poder mejorar tus combersiones ",
+      img: "https://image.flaticon.com/icons/svg/1925/1925173.svg"
     },
     {
-      titulo: "Animacion",
+      titulo: "Pruevas con usuarios reales",
       descripcion:
-        "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impreso",
-      img: "https://image.flaticon.com/icons/svg/531/531213.svg"
+        "Probamos el sitio web con tus usuarios antes de sacarlo al mercado para mejoras la web antes de salir al mercado",
+      img: "https://image.flaticon.com/icons/svg/1508/1508867.svg"
     }
   ]
 };
@@ -49,59 +49,83 @@ export const StatePrecios = {
   precios: [
     {
       titulo: "BASICO",
-      precio: 50,
+      precio: 250,
       servicios: [
         {
-          nombre: "Dj",
+          nombre: "Sitio Web",
           contratado: true
         },
         {
-          nombre: "Fotografia",
+          nombre: "Diseño Personalizado",
+          contratado: true
+        },
+        {
+          nombre: "Resposive Desing",
           contratado: false
         },
         {
-          nombre: "Animacion",
+          nombre: "Analitica Web",
+          contratado: false
+        },
+        {
+          nombre: "Pruebas con usuarios",
           contratado: false
         }
       ]
     },
     {
       titulo: "PREMIUM",
-      precio: 90,
+      precio: 999,
       servicios: [
         {
-          nombre: "Dj",
+          nombre: "Sitio Web",
           contratado: true
         },
         {
-          nombre: "Fotografia",
+          nombre: "Diseño Personalizado",
           contratado: true
         },
         {
-          nombre: "Animacion",
+          nombre: "Resposive Desing",
           contratado: true
         },
         {
-          nombre: "Fotocol",
+          nombre: "Analitica Web",
+          contratado: true
+        },
+        {
+          nombre: "Pruebas con usuarios",
+          contratado: true
+        },
+        {
+          nombre: "Hosting y Dominio",
           contratado: true
         }
       ]
     },
     {
       titulo: "ESTANDAR",
-      precio: 70,
+      precio: 500,
       servicios: [
         {
-          nombre: "Dj",
+          nombre: "Sitio Web",
           contratado: true
         },
         {
-          nombre: "Fotografia",
+          nombre: "Diseño Personalizado",
           contratado: true
         },
         {
-          nombre: "Animacion",
+          nombre: "Resposive Desing",
           contratado: true
+        },
+        {
+          nombre: "Analitica Web",
+          contratado: true
+        },
+        {
+          nombre: "Pruebas con usuarios",
+          contratado: false
         }
       ]
     }
@@ -136,7 +160,7 @@ export const StateTestimonios = {
 
 export const StateContacto = {
   titulo: "Contacta con nosotros",
-  img: "https://image.flaticon.com/icons/svg/1497/1497772.svg",
+  img: "https://image.flaticon.com/icons/svg/839/839618.svg",
   input: [
     {
       etiqueta: "input",
@@ -173,10 +197,6 @@ export const StateFooter = {
     },
     {
       icono: "fab fa-twitter",
-      url: ""
-    },
-    {
-      icono: "fab fa-spotify",
       url: ""
     },
     {
