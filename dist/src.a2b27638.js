@@ -18707,7 +18707,7 @@ var StateHeader = {
   urlPrimario: "#servicios",
   botonSegundario: "Ver Precios",
   urlSegundario: "#precios",
-  img: "https://image.flaticon.com/icons/svg/1508/1508854.svg"
+  img: "https://image.flaticon.com/icons/svg/1688/1688451.svg"
 };
 exports.StateHeader = StateHeader;
 var SteteServicios = {
@@ -18823,9 +18823,14 @@ var StateContacto = {
     textoInfo: ""
   }, {
     etiqueta: "input",
-    type: "email",
+    type: "text",
+    name: "Compañia",
+    textoInfo: ""
+  }, {
+    etiqueta: "input",
+    type: "text",
     name: "Email",
-    textoInfo: "Nunca compartiremos su correo electrónico con nadie más.."
+    textoInfo: ""
   }, {
     etiqueta: "textarea",
     type: "text",
@@ -18863,10 +18868,10 @@ exports.default = void 0;
 var _inicialState = require("./state/inicialState");
 
 var item = _inicialState.StateNav.nav.map(function (item) {
-  return "<li class=\"nav-item mr-5\">\n                  <a data-scroll class=\"nav-link\" href='#".concat(item, "'>").concat(item.toUpperCase(), "</a>\n                </li>");
+  return "<li class=\"nav-item mr-5\">\n      <a data-scroll class=\"nav-link\" href='#".concat(item, "'>").concat(item.toUpperCase(), "</a>\n    </li>");
 });
 
-var Nav = "\n  <nav id='home' class=\" container navbar navbar-expand-lg navbar-light bg-transparent\">\n      <a class=\"navbar-brand \" href=\"#\"><i class=\"h1 ".concat(_inicialState.StateNav.logo, " text-primary\"></i></a>\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      <div class=\"collapse navbar-collapse d-flex-lg justify-content-end\" id=\"navbarNav\">\n        <ul class=\"navbar-nav\">\n          ").concat(item.join(""), "\n        </ul>\n      </div>\n  </nav>\n");
+var Nav = "\n  <nav id='home' class=\" container navbar navbar-expand-lg navbar-light bg-transparent\">\n      <a class=\"navbar-brand \" href=\"#\"><i class=\"h1 ".concat(_inicialState.StateNav.logo, " text-primary\"></i></a>\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <i class=\"fas fa-ellipsis-v\"></i>\n      </button>\n      <div class=\"collapse navbar-collapse d-flex-lg justify-content-end\" id=\"navbarNav\">\n        <ul class=\"navbar-nav\">\n          ").concat(item.join(""), "\n        </ul>\n      </div>\n  </nav>\n");
 var _default = Nav;
 exports.default = _default;
 },{"./state/inicialState":"src/state/inicialState.js"}],"src/header.js":[function(require,module,exports) {
@@ -18883,7 +18888,7 @@ var _inicialState = require("./state/inicialState");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Header = "\n  <header>\n    ".concat(_nav.default, "\n    <section class='container h-75'>\n      <div class='row  h-100'>\n        <div class=' col-xs-12 col-lg-6 h-100 d-flex flex-column justify-content-center'>\n          <div class=''>\n            <h1 class='h2 text-center text-lg-left'>").concat(_inicialState.StateHeader.titulo, "</h1>\n            <p class='text-center text-lg-left font-weight-lighter'>").concat(_inicialState.StateHeader.descripcion, "</p>\n            <div class='d-flex justify-content-lg-start justify-content-center'>\n              <button type=\"button\" class=\"rounded mr-3 mt-3 shadow btn btn-primary\">").concat(_inicialState.StateHeader.botonPrimario, "</button>\n              <button type=\"button\" class=\"rounded mt-3 shadow btn btn-outline-secondary\">").concat(_inicialState.StateHeader.botonSegundario, "</button>\n            </div>\n          </div>\n        </div>\n        <div class='col-xs-12 col-lg-6 d-flex justify-content-center align-items-center'>\n          <img class='w-75 d-sm-none d-md-none d-none d-lg-block' src='").concat(_inicialState.StateHeader.img, "'/>\n        </div>\n      </div>\n    </section>\n    <section class='d-flex justify-content-center align-items-center'>\n      <i class=\" d-none d-sm-none d-md-block fas fa-angle-down display-4 text-muted animated bounce infinite delay-4s\"></i>\n    </section>\n  </header>\n");
+var Header = "\n  <header>\n    ".concat(_nav.default, "\n    <section class='container h-75'>\n      <div class='row  h-100'>\n        <div class=' col-xs-12 col-lg-6 h-100 d-flex flex-column justify-content-center'>\n          <div class=''>\n            <h1 class='h1 text-center text-lg-left'>").concat(_inicialState.StateHeader.titulo, "</h1>\n            <p class='text-center text-lg-left font-weight-lighter'>").concat(_inicialState.StateHeader.descripcion, "</p>\n            <div class='d-flex justify-content-lg-start justify-content-center'>\n              <button type=\"button\" class=\"pl-4 pr-4 rounded mr-3 mt-3 shadow btn btn-primary\">").concat(_inicialState.StateHeader.botonPrimario, "</button>\n              <button type=\"button\" class=\"pl-4 pr-4 rounded mt-3 shadow btn btn-outline-secondary\">").concat(_inicialState.StateHeader.botonSegundario, "</button>\n            </div>\n          </div>\n        </div>\n        <div class='col-xs-12 col-lg-6 d-flex justify-content-center align-items-center'>\n          <img class='w-75 d-sm-none d-md-none d-none d-lg-block' src='").concat(_inicialState.StateHeader.img, "'/>\n        </div>\n      </div>\n    </section>\n    <section class='d-flex justify-content-center align-items-center'>\n      <i class=\" d-none d-sm-none d-md-block fas fa-angle-down display-4 text-muted animated bounce infinite delay-4s\"></i>\n    </section>\n  </header>\n");
 var _default = Header;
 exports.default = _default;
 },{"./nav":"src/nav.js","./state/inicialState":"src/state/inicialState.js"}],"src/Servicios.js":[function(require,module,exports) {
@@ -18957,22 +18962,7 @@ var testimonio = _inicialState.StateTestimonios.testimonio.map(function (t) {
 var Testimonios = "\n  <section id='testimonio' class='pb-5'>\n   <h2 class='text-center m-5'>".concat(_inicialState.StateTestimonios.titulo, "</h2>\n   <div class='container d-flex justify-content-around flex-wrap'>\n   ").concat(testimonio.join(""), "</div>\n  </section>\n");
 var _default = Testimonios;
 exports.default = _default;
-},{"./state/inicialState":"src/state/inicialState.js"}],"src/form.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var formDatos = function formDatos(e) {
-  return e.preventDefault();
-};
-
-console.log("jdalfj");
-var _default = formDatos;
-exports.default = _default;
-},{}],"src/contact.js":[function(require,module,exports) {
+},{"./state/inicialState":"src/state/inicialState.js"}],"src/contact.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18982,20 +18972,20 @@ exports.default = void 0;
 
 var _inicialState = require("./state/inicialState");
 
-var _form = _interopRequireDefault(require("./form"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function formDatos(e) {
+  e.preventDefault(), console.log("nlkjlkj");
+}
 
 var form = _inicialState.StateContacto.input.map(function (i) {
-  return "<div class=\"form-group\">\n      ".concat(i.etiqueta === "textarea" ? " \n          <textarea class=\"form-control rounded \" placeholder=\"".concat(i.name, "\" row='3'></textarea>") : "<".concat(i.etiqueta, " type=\"").concat(i.type, "\" class=\"form-control rounded\" placeholder=\"").concat(i.name, "\" name='").concat(i.name, "'> "), "\n    </div>");
+  return "<div class=\"form-group\">\n      ".concat(i.etiqueta === "textarea" ? "\n          <textarea class=\"form-control rounded \" placeholder=\"".concat(i.name, "\" row='3'></textarea>") : "<".concat(i.etiqueta, " type=\"").concat(i.type, "\" class=\"form-control rounded\" placeholder=\"").concat(i.name, "\" name=\"").concat(i.name, "\"> "), "\n    </div>");
 });
 
-var Contact = "\n  <section id='contacto' class='bg-light h-75 mt-5'>\n    <div class='h-100 container d-flex flex-wrap'>\n      <div class='col-lg-6 col-sm-12 w-100 d-flex justify-content-center align-items-center'>\n        <img class='w-75 d-sm-none d-md-none d-none d-lg-block' src='".concat(_inicialState.StateContacto.img, "' alt=''/>\n      </div>\n      <div class='col-lg-6 col-sm-12 h-100 d-flex justify-content-center align-items-center'>\n        <div>\n          <p class='h3 pb-5'>").concat(_inicialState.StateContacto.titulo, "</p>\n          <form onsubmit=").concat(function (event) {
-  return (0, _form.default)(event);
-}, ">\n            ").concat(form.join(""), "\n            <button type=\"submit\" class=\"rounded btn btn-primary\">").concat(_inicialState.StateContacto.submit, "</button>\n          </form>\n        </div>\n      </div>\n    </div>\n  </section>\n");
+var Contact = "\n  <section id='contacto' class='bg-light h-75 mt-5'>\n    <div class='h-100 container d-flex flex-wrap'>\n      <div class='col-lg-6 col-sm-12 w-100 d-flex justify-content-center align-items-center'>\n        <img class='w-75 d-sm-none d-md-none d-none d-lg-block' src='".concat(_inicialState.StateContacto.img, "' alt=''/>\n      </div>\n      <div class='col-lg-6 col-sm-12 h-100 d-flex justify-content-center align-items-center'>\n        <div>\n          <p class='h3 pb-5'>").concat(_inicialState.StateContacto.titulo, "</p>\n          <form onsubmit=\"").concat(function (e) {
+  return formDatos(e);
+}, "\">\n            ").concat(form.join(""), "\n            <button type=\"submit\" value=\"Submit\" class=\"rounded btn btn-primary\">").concat(_inicialState.StateContacto.submit, "</button>\n          </form>\n        </div>\n      </div>\n    </div>\n  </section>\n");
 var _default = Contact;
 exports.default = _default;
-},{"./state/inicialState":"src/state/inicialState.js","./form":"src/form.js"}],"src/footer.js":[function(require,module,exports) {
+},{"./state/inicialState":"src/state/inicialState.js"}],"src/footer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -19073,7 +19063,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53339" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52314" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

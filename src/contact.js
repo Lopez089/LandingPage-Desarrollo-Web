@@ -1,14 +1,17 @@
 import { StateContacto } from "./state/inicialState";
-import formDatos from "./form";
+
+function formDatos(e) {
+  e.preventDefault(), console.log("nlkjlkj");
+}
 
 const form = StateContacto.input.map(
   i =>
     `<div class="form-group">
       ${
         i.etiqueta === "textarea"
-          ? ` 
+          ? `
           <textarea class="form-control rounded " placeholder="${i.name}" row='3'></textarea>`
-          : `<${i.etiqueta} type="${i.type}" class="form-control rounded" placeholder="${i.name}" name='${i.name}'> `
+          : `<${i.etiqueta} type="${i.type}" class="form-control rounded" placeholder="${i.name}" name="${i.name}"> `
       }
     </div>`
 );
@@ -24,9 +27,9 @@ const Contact = `
       <div class='col-lg-6 col-sm-12 h-100 d-flex justify-content-center align-items-center'>
         <div>
           <p class='h3 pb-5'>${StateContacto.titulo}</p>
-          <form onsubmit=${event => formDatos(event)}>
+          <form onsubmit="${e => formDatos(e)}">
             ${form.join("")}
-            <button type="submit" class="rounded btn btn-primary">${
+            <button type="submit" value="Submit" class="rounded btn btn-primary">${
               StateContacto.submit
             }</button>
           </form>

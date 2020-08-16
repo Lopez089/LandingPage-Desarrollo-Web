@@ -11,7 +11,7 @@ export const StateHeader = {
   urlPrimario: "#servicios",
   botonSegundario: "Ver Precios",
   urlSegundario: "#precios",
-  img: "https://image.flaticon.com/icons/svg/1508/1508854.svg"
+  img: "https://image.flaticon.com/icons/svg/1688/1688451.svg"
 };
 
 export const SteteServicios = {
@@ -170,9 +170,15 @@ export const StateContacto = {
     },
     {
       etiqueta: "input",
-      type: "email",
+      type: "text",
+      name: "Compañia",
+      textoInfo: ""
+    },
+    {
+      etiqueta: "input",
+      type: "text",
       name: "Email",
-      textoInfo: "Nunca compartiremos su correo electrónico con nadie más.."
+      textoInfo: ""
     },
     {
       etiqueta: "textarea",

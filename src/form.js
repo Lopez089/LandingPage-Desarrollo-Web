@@ -1,3 +1,5 @@
-const formDatos = e => e.preventDefault();
-console.log("jdalfj");
+const formDatos = e => {
+  console.log(e);
+};
+
 export default formDatos;

@@ -8,11 +8,11 @@ const Header = `
       <div class='row  h-100'>
         <div class=' col-xs-12 col-lg-6 h-100 d-flex flex-column justify-content-center'>
           <div class=''>
-            <h1 class='h2 text-center text-lg-left'>${StateHeader.titulo}</h1>
+            <h1 class='h1 text-center text-lg-left'>${StateHeader.titulo}</h1>
             <p class='text-center text-lg-left font-weight-lighter'>${StateHeader.descripcion}</p>
             <div class='d-flex justify-content-lg-start justify-content-center'>
-              <button type="button" class="rounded mr-3 mt-3 shadow btn btn-primary">${StateHeader.botonPrimario}</button>
-              <button type="button" class="rounded mt-3 shadow btn btn-outline-secondary">${StateHeader.botonSegundario}</button>
+              <button type="button" class="pl-4 pr-4 rounded mr-3 mt-3 shadow btn btn-primary">${StateHeader.botonPrimario}</button>
+              <button type="button" class="pl-4 pr-4 rounded mt-3 shadow btn btn-outline-secondary">${StateHeader.botonSegundario}</button>
             </div>
           </div>
         </div>
